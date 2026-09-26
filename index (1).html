@@ -1,0 +1,812 @@
+<!doctype html>
+<html lang="ko"><head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260925-05-46ec85d","C":{"Abril Fatface":"YACgEZbkUVE,0","Alfa Slab One":"YACgEYS9sJU,0","Anton":"YACgEcYqQ-A,0","Archivo":"YACgEZulLoA,0","Arial Narrow":"YAGyDvJ_4Ts,0","Arial Rounded MT Bold":"YAFcfoaHu-s,0","Arial":"YAGyDvJ_4Ts,0","Avenir Next":"YAFcfmNq6UY,0","Baloo 2":"YADK30bC6HQ,0","Bebas Neue":"YACgESME5ew,0","Bricolage Grotesque":"YAFyMcdwzpc,0","Broken Glyph":"YADZ-exUkv0,0","Canva Sans":"YAFdJjTk5UU,1","Caveat":"YALBs2ploWQ,0","Comic Sans MS":"YAFcfvtOAUY,1","Cormorant Garamond":"YAFdJhX-538,0","Courier New":"YAGzXiGs0_8,0","Courier Prime":"YAD1aFjegN8,0","DM Sans":"YAD1aU3sLnI,0","DM Serif Display":"YAD1aYG82rc,0","Forum":"YACgEcnnqB4,0","Fraunces":"YAFdJpU7Kkk,0","Georgia":"YAGzXkO0pEM,0","Ghost Mono":"YAHQutsX00Q,0","Hanken Grotesk":"YAFcfhwp99E,0","Helvetica Neue":"YAFcf6CtJfI,0","Helvetica":"YAFcf6CtJfI,0","IBM Plex Mono":"YAFdJkmvhGI,0","Impact":"YAFcfnjI7Vk,0","Instrument Serif":"YAHFeOnZNEk,0","Inter":"YAFdJvSyp_k,3","Iowan Old Style":"YAGNIFa8j9o,0","Jacques Francois":"YADK3zbC6RM,0","JetBrains Mono":"YAFdJksXcAk,0","Josefin Sans":"YAFdJjvw9Ps,0","Lato":"YAFdJuFCnaw,0","Libre Baskerville":"YACgEUFdPdA,0","Lobster":"YAD8SnSjSFI,0","Lora":"YACgEXvxf8Q,0","Merriweather":"YACgEXvHxxs,0","Montserrat":"YAFdtQi73Xs,0","Nunito":"YAFdJoNRMmU,1","Oleo Script":"YACgEQQ14jI,0","Oswald":"YACgEQY10lw,0","Pacifico":"YADLjORQ1u4,0","Phantom Sans":"YAFdJvgJ5TU,0","Playfair Display":"YAFdJhem5V8,1","Plus Jakarta Sans":"YAGvf3_u0_Q,0","Poppins":"YAFdJjbTu24,1","Press Start 2P":"YAFyGr-8pmQ,0","Quicksand":"YAFdJpYtCxE,1","Raleway":"YAFdJhmxbVQ,1","Roboto Slab":"YAFdJswIKAg,0","Rockwell":"YAFcfyVZnN0,0","Rye":"YACgEdQP21k,0","Segoe UI":"YAHNdRD1Klw,0","Source Sans 3":"YAG4lO1Mj10,0","Source Serif 4":"YACgEfdj394,0","Space Grotesk":"YADZ-dYEmhg,0","Space Mono":"YADW1-vpsoc,0","Times New Roman":"YAGzXW3gftg,0","Times":"YAGzXW3gftg,0","Trebuchet MS":"YAFcfrglpVA,0","UV Display":"YAEdVfSSpYo,0","UV Sans":"YAFdJvgJ5TU,0","Ubuntu":"YACgERDU--Q,0","Verdana":"YAGzXTctYtQ,0","Work Sans":"YAGXhLOKv44,0","Yellowtail":"YACgEYG4kG4,0","ui-monospace":"YAD1aFjegN8,0","ui-sans-serif":"YACkoD1yZN0,0"}}');</script><script src="/_sdk/6542d56fbfe7a3eb.telemetry_sdk.js" integrity="sha512-ECdM0nK7EkwDuOqho2qxgyRQXyBHk9hZqRKMBr+Xsu6zjeHlt+qkO2N2YRiHN7Kg4e1fEHDhjIp4bGJYVypv1g=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>영작 순서 연습</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #17202b;
+      --muted: #65717f;
+      --paper: #f8f5ee;
+      --card: #fffdf8;
+      --line: #d9d2c5;
+      --navy: #183b57;
+      --blue: #26708a;
+      --gold: #e4a32c;
+      --green: #277554;
+      --red: #b94b43;
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-width: 320px;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: "Work Sans", sans-serif;
+    }
+
+    .app-shell {
+      width: 100%;
+      min-height: calc(100 * min(var(--vh, 1vh), 1vh));
+      background:
+        radial-gradient(circle at 12% 4%, rgba(228,163,44,.14), transparent 26rem),
+        radial-gradient(circle at 88% 18%, rgba(38,112,138,.11), transparent 25rem),
+        var(--paper);
+    }
+
+    .title-font { font-family: "Fraunces", serif; }
+
+    .study-card {
+      background: rgba(255, 253, 248, .94);
+      border: 1px solid var(--line);
+      box-shadow: 0 18px 50px rgba(31, 42, 48, .08);
+    }
+
+    .screen { display: none; }
+    .screen.active { display: block; animation: rise .45s ease both; }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .word-bank, .answer-zone {
+      min-height: 132px;
+      transition: border-color .2s ease, background .2s ease, box-shadow .2s ease;
+    }
+
+    .answer-zone.drag-over {
+      border-color: var(--blue);
+      background: #edf8fa;
+      box-shadow: inset 0 0 0 2px rgba(38,112,138,.12);
+    }
+
+    .word-tile {
+      display: inline-flex;
+      align-items: center;
+      gap: .35rem;
+      border: 1px solid #b7c5cb;
+      border-radius: 10px;
+      padding: .65rem .75rem;
+      background: #fff;
+      color: var(--navy);
+      font-weight: 600;
+      box-shadow: 0 2px 0 rgba(24,59,87,.08);
+      cursor: grab;
+      transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease, opacity .16s ease;
+      user-select: none;
+    }
+
+    .word-tile:hover, .word-tile:focus-visible {
+      transform: translateY(-2px);
+      border-color: var(--blue);
+      box-shadow: 0 6px 14px rgba(24,59,87,.14);
+      outline: none;
+    }
+
+    .word-tile.dragging { opacity: .35; cursor: grabbing; }
+    .answer-tile { background: #eaf5f5; border-color: #99c6c9; touch-action: none; position: relative; gap: .55rem; }
+    .answer-tile.selected { outline: 3px solid rgba(228,163,44,.65); outline-offset: 2px; }
+    .answer-tile.dragging { opacity: .48; transform: translateY(-4px) scale(1.02); box-shadow: 0 12px 22px rgba(24,59,87,.2); }
+    .drag-handle { display: inline-flex; align-items: center; justify-content: center; width: 2rem; min-width: 2rem; height: 2rem; border-radius: .5rem; color: #26708a; background: rgba(38,112,138,.12); cursor: grab; touch-action: none; }
+    .drag-handle:active { cursor: grabbing; }
+    .insert-marker { height: 3.25rem; width: 4px; border-radius: 999px; background: var(--gold); box-shadow: 0 0 0 3px rgba(228,163,44,.18); flex: 0 0 4px; }
+    .answer-zone.drag-active { gap: .8rem; }
+    .answer-zone.drag-active::after { content: "드래그하여 원하는 위치에 놓으세요"; width: 100%; color: #65717f; font-size: .8rem; order: 999; }
+
+    .answer-tile.correct-flash { border-color: var(--green); background: #e5f5eb; }
+    .answer-tile.wrong-flash { border-color: var(--red); background: #fff0ee; }
+
+    .tile-remove {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.2rem;
+      height: 1.2rem;
+      padding: 0;
+      border: 0;
+      border-radius: 999px;
+      color: #47616a;
+      background: transparent;
+      cursor: pointer;
+    }
+    .tile-remove:hover, .tile-remove:focus-visible { color: var(--red); background: #f9deda; outline: none; }
+
+    .action-button {
+      transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+    }
+    .action-button:hover { transform: translateY(-1px); filter: brightness(1.02); }
+    .action-button:focus-visible { outline: 3px solid rgba(228,163,44,.55); outline-offset: 3px; }
+    .action-button:disabled { opacity: .48; cursor: not-allowed; transform: none; }
+
+    .progress-fill { transition: width .35s ease; }
+
+    textarea:focus-visible {
+      outline: 3px solid rgba(38,112,138,.28);
+      border-color: var(--blue);
+    }
+
+    @media (max-width: 640px) {
+      .word-tile { padding: .58rem .65rem; font-size: .92rem; }
+    }
+  </style>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="/_sdk/6c2ecc939521f244.data_sdk.js" type="text/javascript" integrity="sha512-gRx8s+XsZDN6mSIQu2sivLZysbV0WHhb5kXNUWlgVb5lCMU1foJYukyMEDPv8Tnoocb8iwqB4XdRrWc7oEGzIQ=="></script>
+  <script src="/_sdk/ef0304cb8c7ed696.editing_sdk.js" type="text/javascript" integrity="sha512-kmL9L5Yuj57MQaequKbMA3aGpT/5lBUp10iGA3e3qnmMLs2ZZQ0poCcIfdd5rTgrhEvNPe4HK0ohePW7ZpgAFg=="></script>
+  <script src="/_sdk/ddcab3e45959c817.resizing_sdk.js" type="text/javascript" integrity="sha512-VAviUKfZVzugWBSeULYjSljTX+nb84wc6Zzbx5GQaQgh6X2ISSjXi8eIiCDGdwDh10esJMY0+QFQgUy9NcrTlQ=="></script>
+ </head>
+ <body data-template-id="__page-root" style="background: rgb(248, 245, 238);">
+  <div class="app-shell">
+   <header class="w-full border-b border-[#d9d2c5] bg-[#fffdf8]/80">
+    <div class="mx-auto flex w-full max-w-5xl items-center gap-4 px-5 py-5 sm:px-8">
+     <div class="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-[#183b57] text-[#fffdf8]" aria-hidden="true">
+      <i data-lucide="languages" style="width:23px;height:23px"></i>
+     </div>
+     <div>
+      <h1 data-template-id="app-title" class="canva-text title-font text-2xl font-bold leading-tight sm:text-3xl" style="color: rgb(24, 59, 87); font-weight: 700; font-style: normal; font-size: 32px;">영어 배열 학습 도우미 by SEO</h1>
+      <p data-template-id="app-description" class="canva-text mt-1 text-sm text-[#65717f] sm:text-base" style="color: rgb(101, 113, 127); font-weight: 400; font-style: normal; font-size: 16px;">흩어진 단어를 차근차근 연결하며 영어 문장의 흐름을 익혀 보세요.</p>
+     </div>
+    </div>
+   </header>
+   <main class="mx-auto w-full max-w-5xl px-5 py-8 sm:px-8 sm:py-12">
+    <section id="input-screen" class="screen active" aria-labelledby="source-label">
+     <div class="study-card mx-auto max-w-3xl rounded-[1.5rem] p-5 sm:p-9">
+      <div class="mb-7 flex items-start gap-4">
+       <div class="mt-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#f7e6bc] text-[#8a5c0c]" aria-hidden="true">
+        <i data-lucide="pen-line" style="width:18px;height:18px"></i>
+       </div>
+       <div>
+        <h2 data-template-id="source-heading" class="canva-text title-font text-2xl font-bold text-[#183b57]" style="color: rgb(24, 59, 87); font-weight: 700; font-style: normal; font-size: 24px;">영어 본문을 준비해 주세요</h2>
+        <p data-template-id="source-helper" class="canva-text mt-2 leading-7 text-[#65717f]" style="color: rgb(101, 113, 127); font-weight: 400; font-style: normal; font-size: 16px;">붙여넣은 본문은 문장 단위로 나뉘며, 한 문장씩 단어 순서 연습을 진행합니다.</p>
+       </div>
+      </div>
+      <form id="source-form">
+       <label data-template-id="source-label" class="canva-text mb-2 block font-semibold text-[#17202b]" for="source-text" style="color: rgb(23, 32, 43); font-weight: 600; font-style: normal; font-size: 16px;">연습할 영어 본문</label> <textarea id="source-text" class="w-full resize-y rounded-xl border border-[#bdb6aa] bg-white px-4 py-4 leading-7 text-[#17202b] shadow-inner shadow-[#17202b]/[.03]" rows="10" aria-describedby="source-error"></textarea>
+       <p id="source-error" class="mt-3 hidden rounded-lg bg-[#fff0ee] px-3 py-2 text-sm font-medium text-[#9e3731]" role="alert"></p>
+       <aside data-template-id="example-card" class="canva-card mt-5 rounded-xl border border-[#ead9ab] p-4" style="background: rgb(255, 247, 223);">
+        <h3 data-template-id="example-title" class="canva-text font-bold text-[#745113]" style="color: rgb(116, 81, 19); font-weight: 700; font-style: normal; font-size: 19px;">입력 팁</h3>
+        <p data-template-id="example-text" class="canva-text mt-1 text-sm leading-6 text-[#695b43]" style="color: rgb(105, 91, 67); font-weight: 400; font-style: normal; font-size: 16px;">예: I enjoy reading books. My sister likes music! 줄바꿈이 있어도 자연스럽게 문장으로 나눠 드려요.</p>
+       </aside><button data-template-id="start-button" class="canva-button action-button mt-7 inline-flex w-full items-center justify-center gap-2 rounded-xl px-5 py-3.5 font-bold shadow-lg shadow-[#183b57]/15 sm:w-auto" type="submit" style="background: rgb(24, 59, 87); color: rgb(255, 255, 255); font-weight: 700;"> <i data-lucide="play" style="width:18px;height:18px"></i> <span data-template-id="start-button-label" class="canva-text" style="font-weight: 700; font-style: normal; font-size: 16px;">연습 시작</span> </button>
+      </form>
+     </div>
+    </section>
+    <section id="practice-screen" class="screen" aria-label="문장 배열 연습">
+     <div class="study-card overflow-hidden rounded-[1.5rem]">
+      <div data-template-id="progress-panel" class="canva-panel border-b border-[#c9d9dc] px-5 py-5 sm:px-8" style="background: rgb(237, 247, 248);">
+       <div class="mb-3 flex flex-wrap items-center justify-between gap-2">
+        <p id="sentence-count" class="text-sm font-bold tracking-wide text-[#183b57]" aria-live="polite"></p>
+        <p id="hint-status" class="text-sm font-medium text-[#745113]" aria-live="polite"></p>
+       </div>
+       <div class="h-2.5 overflow-hidden rounded-full bg-[#d4e1e3]" aria-label="진행률">
+        <div id="progress-fill" class="progress-fill h-full rounded-full bg-[#26708a]" style="width:0%"></div>
+       </div>
+      </div>
+      <div class="p-5 sm:p-8">
+       <section class="mb-7">
+        <p data-template-id="current-label" class="canva-text mb-2 text-sm font-bold uppercase tracking-[.15em] text-[#26708a]" style="color: rgb(38, 112, 138); font-weight: 700; font-style: normal; font-size: 16px;">현재 문장</p>
+        <div class="rounded-xl border border-dashed border-[#bfcacd] bg-[#f5f8f7] px-5 py-4">
+         <p id="reference-sentence" class="text-lg font-medium leading-8 text-[#183b57]" aria-live="polite"></p>
+        </div>
+       </section>
+       <section aria-labelledby="word-bank-heading">
+        <div class="mb-3 flex items-center justify-between gap-3">
+         <div>
+          <h2 data-template-id="word-bank-heading" class="canva-text font-bold text-[#17202b]" style="color: rgb(23, 32, 43); font-weight: 700; font-style: normal; font-size: 24px;">섞인 단어</h2>
+          <p data-template-id="word-bank-help" class="canva-text mt-1 text-sm text-[#65717f]" style="color: rgb(101, 113, 127); font-weight: 400; font-style: normal; font-size: 16px;">단어를 클릭하거나 답안 영역으로 끌어다 놓으세요.</p>
+         </div><i data-lucide="shuffle" class="shrink-0 text-[#26708a]" style="width:22px;height:22px" aria-hidden="true"></i>
+        </div>
+        <div id="word-bank" class="word-bank flex flex-wrap content-start gap-2 rounded-xl border border-[#c9d4d5] bg-[#f7faf9] p-4" aria-label="섞인 단어 타일"></div>
+       </section>
+       <section class="mt-7" aria-labelledby="answer-heading">
+        <div class="mb-3">
+         <h2 data-template-id="answer-heading" class="canva-text font-bold text-[#17202b]" style="color: rgb(23, 32, 43); font-weight: 700; font-style: normal; font-size: 24px;">내 답안</h2>
+         <p data-template-id="answer-help" class="canva-text mt-1 text-sm text-[#65717f]" style="color: rgb(101, 113, 127); font-weight: 400; font-style: normal; font-size: 16px;">답안 안의 단어는 드래그해서 순서를 바꾸거나 클릭해서 되돌릴 수 있어요.</p>
+         <p data-template-id="answer-keyboard-help" class="canva-text mt-1 text-xs text-[#87939b]" style="color: rgb(135, 147, 155); font-weight: 400; font-style: normal; font-size: 16px;">타일을 클릭해 선택한 뒤 ← → 방향키로 순서를 바꿀 수 있어요.</p>
+        </div>
+        <div id="answer-zone" class="answer-zone flex flex-wrap content-start gap-2 rounded-xl border-2 border-dashed border-[#aebfc3] bg-[#fffefa] p-4" tabindex="0" aria-label="내 답안 영역"></div>
+        <p id="answer-placeholder" class="pointer-events-none -mt-[104px] ml-5 text-sm text-[#87939b]"></p>
+       </section>
+       <div class="mt-7 flex flex-wrap gap-3">
+        <button data-template-id="hint-button" id="hint-button" class="canva-button action-button inline-flex items-center gap-2 rounded-xl border border-[#d2aa51] bg-[#fff7df] px-4 py-3 font-bold text-[#76510c]" type="button" style="background: rgb(255, 247, 223); color: rgb(118, 81, 12); font-weight: 700;"> <i data-lucide="lightbulb" style="width:18px;height:18px"></i> <span data-template-id="hint-button-label" class="canva-text" style="font-weight: 700; font-style: normal; font-size: 16px;">힌트</span> </button> <button data-template-id="reset-button" id="reset-button" class="canva-button action-button inline-flex items-center gap-2 rounded-xl border border-[#b9c5c8] bg-white px-4 py-3 font-bold text-[#36505a]" type="button" style="background: rgb(255, 255, 255); color: rgb(54, 80, 90); font-weight: 700;"> <i data-lucide="rotate-ccw" style="width:18px;height:18px"></i> <span data-template-id="reset-button-label" class="canva-text" style="font-weight: 700; font-style: normal; font-size: 16px;">초기화</span> </button> <button data-template-id="check-button" id="check-button" class="canva-button action-button ml-auto inline-flex items-center gap-2 rounded-xl px-5 py-3 font-bold shadow-lg shadow-[#183b57]/15" type="button" style="background: rgb(24, 59, 87); color: rgb(255, 255, 255); font-weight: 700;"> <i data-lucide="circle-check" style="width:18px;height:18px"></i> <span data-template-id="check-button-label" class="canva-text" style="font-weight: 700; font-style: normal; font-size: 16px;">답 확인</span> </button>
+       </div>
+       <section id="feedback-panel" class="mt-6 hidden rounded-xl border p-4" aria-live="polite">
+        <div class="flex items-start gap-3">
+         <div id="feedback-icon" class="mt-0.5"></div>
+         <div class="min-w-0 flex-1">
+          <h2 id="feedback-title" class="font-bold"></h2>
+          <p id="feedback-text" class="mt-1 leading-6"></p>
+          <p id="correct-answer" class="mt-3 hidden rounded-lg bg-white/70 px-3 py-2 font-medium leading-7"></p>
+          <div id="feedback-actions" class="mt-4 flex flex-wrap gap-2"></div>
+         </div>
+        </div>
+       </section>
+      </div>
+     </div>
+    </section>
+    <section id="complete-screen" class="screen" aria-labelledby="complete-heading">
+     <div data-template-id="completion-card" class="canva-card mx-auto max-w-2xl rounded-[1.5rem] p-6 text-center sm:p-10" style="background: rgb(255, 253, 248);">
+      <div class="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-[#dff1e7] text-[#277554]" aria-hidden="true">
+       <i data-lucide="party-popper" style="width:32px;height:32px"></i>
+      </div>
+      <h2 data-template-id="complete-heading" class="canva-text title-font mt-5 text-3xl font-bold text-[#183b57]" style="color: rgb(24, 59, 87); font-weight: 700; font-style: normal; font-size: 24px;">연습을 완료했어요!</h2>
+      <p data-template-id="complete-description" class="canva-text mx-auto mt-3 max-w-md leading-7 text-[#65717f]" style="color: rgb(101, 113, 127); font-weight: 400; font-style: normal; font-size: 16px;">한 문장씩 집중해서 배열한 기록이에요. 다시 시작해서 더 자연스럽게 익혀 보세요.</p>
+      <div class="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-4">
+       <div class="rounded-xl bg-[#f3f0e8] p-4">
+        <p data-template-id="total-label" class="canva-text text-xs font-bold text-[#65717f]" style="color: rgb(101, 113, 127); font-weight: 700; font-style: normal; font-size: 16px;">전체 문장</p>
+        <p id="result-total" class="mt-2 text-2xl font-bold text-[#183b57]"></p>
+       </div>
+       <div class="rounded-xl bg-[#eaf5f5] p-4">
+        <p data-template-id="correct-label" class="canva-text text-xs font-bold text-[#65717f]" style="color: rgb(101, 113, 127); font-weight: 700; font-style: normal; font-size: 16px;">정답 문장</p>
+        <p id="result-correct" class="mt-2 text-2xl font-bold text-[#277554]"></p>
+       </div>
+       <div class="rounded-xl bg-[#fff5dd] p-4">
+        <p data-template-id="hints-label" class="canva-text text-xs font-bold text-[#65717f]" style="color: rgb(101, 113, 127); font-weight: 700; font-style: normal; font-size: 16px;">힌트 사용</p>
+        <p id="result-hints" class="mt-2 text-2xl font-bold text-[#9a680d]"></p>
+       </div>
+       <div class="rounded-xl bg-[#edf0f5] p-4">
+        <p data-template-id="rate-label" class="canva-text text-xs font-bold text-[#65717f]" style="color: rgb(101, 113, 127); font-weight: 700; font-style: normal; font-size: 16px;">정답률</p>
+        <p id="result-rate" class="mt-2 text-2xl font-bold text-[#183b57]"></p>
+       </div>
+      </div><button data-template-id="restart-button" id="restart-button" class="canva-button action-button mt-8 inline-flex items-center gap-2 rounded-xl px-5 py-3.5 font-bold shadow-lg shadow-[#183b57]/15" type="button" style="background: rgb(24, 59, 87); color: rgb(255, 255, 255); font-weight: 700;"> <i data-lucide="rotate-ccw" style="width:18px;height:18px"></i> <span data-template-id="restart-button-label" class="canva-text" style="font-weight: 700; font-style: normal; font-size: 16px;">처음부터 다시</span> </button>
+     </div>
+    </section>
+   </main>
+  </div>
+  <script>
+    const state = {
+      sourceText: "",
+      sentences: [],
+      currentIndex: 0,
+      bank: [],
+      answer: [],
+      hintedSentenceIndexes: new Set(),
+      correctCount: 0,
+      dragTokenId: null
+    };
+
+    const commonAbbreviations = new Set([
+      "mr.", "mrs.", "ms.", "dr.", "prof.", "sr.", "jr.", "st.", "vs.",
+      "etc.", "e.g.", "i.e.", "fig.", "no.", "inc.", "ltd.", "co.",
+      "jan.", "feb.", "mar.", "apr.", "jun.", "jul.", "aug.", "sep.",
+      "sept.", "oct.", "nov.", "dec.", "a.m.", "p.m."
+    ]);
+
+    const sourceForm = document.getElementById("source-form");
+    const sourceText = document.getElementById("source-text");
+    const sourceError = document.getElementById("source-error");
+    const wordBank = document.getElementById("word-bank");
+    const answerZone = document.getElementById("answer-zone");
+    const answerPlaceholder = document.getElementById("answer-placeholder");
+    const feedbackPanel = document.getElementById("feedback-panel");
+
+    function showScreen(id) {
+      document.querySelectorAll(".screen").forEach((screen) => screen.classList.remove("active"));
+      document.getElementById(id).classList.add("active");
+    }
+
+    function showInputError(message) {
+      sourceError.textContent = message;
+      sourceError.classList.remove("hidden");
+      sourceText.setAttribute("aria-invalid", "true");
+    }
+
+    function clearInputError() {
+      sourceError.textContent = "";
+      sourceError.classList.add("hidden");
+      sourceText.removeAttribute("aria-invalid");
+    }
+
+    function isAbbreviationBefore(text, index) {
+      const before = text.slice(0, index + 1);
+      const wordMatch = before.match(/([A-Za-z](?:[A-Za-z.]*)\.)$/);
+      if (!wordMatch) return false;
+      const word = wordMatch[1].toLowerCase();
+      if (commonAbbreviations.has(word)) return true;
+      if (/^(?:[a-z]\.){2,}$/i.test(word)) return true;
+      return false;
+    }
+
+    function splitSentences(text) {
+      const normalized = text.replace(/\r\n?/g, "\n").replace(/[ \t]+/g, " ").trim();
+      const result = [];
+      let current = "";
+
+      for (let i = 0; i < normalized.length; i++) {
+        const char = normalized[i];
+        current += char;
+
+        const isEnd = char === "." || char === "?" || char === "!";
+        if (!isEnd) continue;
+
+        if (char === "." && isAbbreviationBefore(normalized, i)) continue;
+
+        let nextIndex = i + 1;
+        while (nextIndex < normalized.length && /["')\]”’]/.test(normalized[nextIndex])) {
+          current += normalized[nextIndex];
+          i = nextIndex;
+          nextIndex++;
+        }
+
+        if (nextIndex >= normalized.length || /\s/.test(normalized[nextIndex])) {
+          const sentence = current.trim();
+          if (sentence) result.push(sentence);
+          current = "";
+          while (i + 1 < normalized.length && /\s/.test(normalized[i + 1])) i++;
+        }
+      }
+
+      const remainder = current.trim();
+      if (remainder) result.push(remainder);
+      return result.filter((sentence) => /[A-Za-z0-9]/.test(sentence));
+    }
+
+    function tokenize(sentence) {
+      return sentence.trim().split(/\s+/).filter(Boolean);
+    }
+
+    function shuffled(tokens) {
+      const original = tokens.map((token) => token.text).join("\u0001");
+      let mixed = [...tokens];
+
+      for (let attempt = 0; attempt < 4; attempt++) {
+        mixed = [...tokens];
+        for (let i = mixed.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [mixed[i], mixed[j]] = [mixed[j], mixed[i]];
+        }
+        if (mixed.map((token) => token.text).join("\u0001") !== original || tokens.length < 2) break;
+      }
+      return mixed;
+    }
+
+    function normalizedAnswer(tokens) {
+      return tokens.map((token) => token.text).join(" ").replace(/\s+/g, " ").trim().toLowerCase();
+    }
+
+    function currentTokens() {
+      return tokenize(state.sentences[state.currentIndex]).map((text, index) => ({
+        id: `s${state.currentIndex}-t${index}`,
+        text
+      }));
+    }
+
+    function updateProgress() {
+      const total = state.sentences.length;
+      const position = state.currentIndex + 1;
+      document.getElementById("sentence-count").textContent = `문장 ${position} / 전체 ${total}문장`;
+      document.getElementById("progress-fill").style.width = `${(state.currentIndex / total) * 100}%`;
+      document.getElementById("reference-sentence").textContent = `문장 ${position}: 단어를 올바른 순서로 배열해 보세요.`;
+      document.getElementById("hint-status").textContent =
+        state.hintedSentenceIndexes.has(state.currentIndex) ? "이 문장에서 힌트를 사용했어요." : "힌트를 아직 사용하지 않았어요.";
+    }
+
+    function createTile(token, location) {
+      const tile = document.createElement("div");
+      tile.className = `word-tile ${location === "answer" ? "answer-tile" : ""}`;
+      tile.tabIndex = 0;
+      tile.dataset.tokenId = token.id;
+      tile.setAttribute("role", "button");
+      tile.setAttribute("aria-label", `${token.text}, ${location === "answer" ? "답안에서 제거하거나 방향키로 이동" : "답안에 추가"}`);
+
+      if (location === "answer") {
+        const handle = document.createElement("span");
+        handle.className = "drag-handle";
+        handle.setAttribute("aria-hidden", "true");
+        handle.innerHTML = '<i data-lucide="grip-vertical" style="width:20px;height:20px"></i>';
+        tile.appendChild(handle);
+        tile.addEventListener("pointerdown", (event) => {
+          if (event.target.closest(".tile-remove")) return;
+          beginPointerDrag(event, token.id, tile);
+        });
+      }
+
+      const text = document.createElement("span");
+      text.className = "tile-text";
+      text.textContent = token.text;
+      tile.appendChild(text);
+
+      if (location === "answer") {
+        const remove = document.createElement("button");
+        remove.type = "button";
+        remove.className = "tile-remove";
+        remove.setAttribute("aria-label", `${token.text} 단어 제거`);
+        remove.innerHTML = '<i data-lucide="x" style="width:14px;height:14px"></i>';
+        remove.addEventListener("click", (event) => { event.stopPropagation(); moveToBank(token.id); });
+        tile.appendChild(remove);
+      }
+
+      tile.addEventListener("click", (event) => {
+        if (event.target.closest(".tile-remove") || state.pointerDrag) return;
+        if (location === "answer") {
+          document.querySelectorAll(".answer-tile.selected").forEach((item) => item.classList.remove("selected"));
+          tile.classList.add("selected");
+          state.selectedTokenId = token.id;
+        } else moveToAnswer(token.id);
+      });
+
+      tile.addEventListener("keydown", (event) => {
+        if (location === "answer" && ["ArrowLeft", "ArrowRight"].includes(event.key)) {
+          event.preventDefault();
+          moveAnswerToken(token.id, event.key === "ArrowRight" ? 1 : -1);
+        } else if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          location === "answer" ? moveToBank(token.id) : moveToAnswer(token.id);
+        }
+      });
+      return tile;
+    }
+
+    function moveAnswerToken(tokenId, offset) {
+      const index = state.answer.findIndex((item) => item.id === tokenId);
+      const target = index + offset;
+      if (index < 0 || target < 0 || target >= state.answer.length) return;
+      [state.answer[index], state.answer[target]] = [state.answer[target], state.answer[index]];
+      clearFeedback(); renderTiles();
+      const moved = answerZone.querySelector(`[data-token-id="${tokenId}"]`);
+      if (moved) { moved.classList.add("selected"); moved.focus(); }
+    }
+
+    function beginPointerDrag(event, tokenId, tile) {
+      if (event.button !== undefined && event.button !== 0) return;
+      event.preventDefault();
+      const original = state.answer.map((item) => item.id);
+      state.pointerDrag = { tokenId, original, marker: null, targetIndex: state.answer.findIndex((item) => item.id === tokenId) };
+      tile.classList.add("dragging"); answerZone.classList.add("drag-active");
+      const move = (moveEvent) => {
+        moveEvent.preventDefault();
+        const point = moveEvent;
+        const zoneRect = answerZone.getBoundingClientRect();
+        if (point.clientX < zoneRect.left || point.clientX > zoneRect.right || point.clientY < zoneRect.top || point.clientY > zoneRect.bottom) return;
+        const tiles = [...answerZone.querySelectorAll(".answer-tile:not(.dragging)")];
+        let index = tiles.length;
+        for (let i = 0; i < tiles.length; i++) {
+          const rect = tiles[i].getBoundingClientRect();
+          if (point.clientX < rect.left + rect.width / 2) { index = i; break; }
+        }
+        state.pointerDrag.targetIndex = index;
+        if (!state.pointerDrag.marker) { state.pointerDrag.marker = document.createElement("span"); state.pointerDrag.marker.className = "insert-marker"; }
+        const target = tiles[index];
+        if (target) answerZone.insertBefore(state.pointerDrag.marker, target); else answerZone.insertBefore(state.pointerDrag.marker, answerZone.lastElementChild?.nextSibling || null);
+      };
+      const end = () => {
+        document.removeEventListener("pointermove", move); document.removeEventListener("pointerup", end); document.removeEventListener("pointercancel", end);
+        const drag = state.pointerDrag;
+        if (drag.marker) drag.marker.remove();
+        tile.classList.remove("dragging"); answerZone.classList.remove("drag-active");
+        if (drag.targetIndex !== undefined && drag.targetIndex >= 0) {
+          const itemIndex = state.answer.findIndex((item) => item.id === drag.tokenId);
+          if (itemIndex < 0) { state.pointerDrag = null; return; }
+          const [item] = state.answer.splice(itemIndex, 1);
+          state.answer.splice(Math.min(drag.targetIndex, state.answer.length), 0, item);
+          clearFeedback(); renderTiles();
+        }
+        state.pointerDrag = null;
+      };
+      document.addEventListener("pointermove", move, { passive: false });
+      document.addEventListener("pointerup", end, { once: true });
+      document.addEventListener("pointercancel", end, { once: true });
+    }
+
+    function renderTiles() {
+      wordBank.replaceChildren();
+      answerZone.replaceChildren();
+
+      state.bank.forEach((token) => wordBank.appendChild(createTile(token, "bank")));
+      state.answer.forEach((token) => answerZone.appendChild(createTile(token, "answer")));
+
+      answerPlaceholder.textContent = state.answer.length ? "" : "여기에 단어를 클릭하거나 끌어다 놓으세요.";
+      answerPlaceholder.classList.toggle("hidden", state.answer.length > 0);
+
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function moveToAnswer(tokenId) {
+      const index = state.bank.findIndex((token) => token.id === tokenId);
+      if (index < 0) return;
+      const [token] = state.bank.splice(index, 1);
+      state.answer.push(token);
+      clearFeedback();
+      renderTiles();
+    }
+
+    function moveToBank(tokenId) {
+      const index = state.answer.findIndex((token) => token.id === tokenId);
+      if (index < 0) return;
+      const [token] = state.answer.splice(index, 1);
+      state.bank.push(token);
+      clearFeedback();
+      renderTiles();
+    }
+
+    function placeAtToken(draggedId, targetId) {
+      if (!draggedId || draggedId === targetId) return;
+
+      let token;
+      const bankIndex = state.bank.findIndex((item) => item.id === draggedId);
+      const answerIndex = state.answer.findIndex((item) => item.id === draggedId);
+
+      if (bankIndex >= 0) {
+        [token] = state.bank.splice(bankIndex, 1);
+      } else if (answerIndex >= 0) {
+        [token] = state.answer.splice(answerIndex, 1);
+      } else {
+        return;
+      }
+
+      const targetIndex = state.answer.findIndex((item) => item.id === targetId);
+      if (targetIndex < 0) state.answer.push(token);
+      else state.answer.splice(targetIndex, 0, token);
+
+      clearFeedback();
+      renderTiles();
+    }
+
+    function resetCurrent() {
+      state.bank = shuffled([...state.bank, ...state.answer]);
+      state.answer = [];
+      clearFeedback();
+      renderTiles();
+    }
+
+    function clearFeedback() {
+      feedbackPanel.classList.add("hidden");
+      feedbackPanel.className = "mt-6 hidden rounded-xl border p-4";
+      document.getElementById("feedback-actions").replaceChildren();
+      document.getElementById("correct-answer").classList.add("hidden");
+    }
+
+    function showFeedback(kind, title, text, showAnswer) {
+      const panel = feedbackPanel;
+      const icon = document.getElementById("feedback-icon");
+      const titleElement = document.getElementById("feedback-title");
+      const textElement = document.getElementById("feedback-text");
+      const answerElement = document.getElementById("correct-answer");
+
+      panel.className = `mt-6 rounded-xl border p-4 ${kind === "success" ? "border-[#9bcdb0] bg-[#eaf7ef] text-[#205d42]" : "border-[#edc2a9] bg-[#fff4eb] text-[#924637]"}`;
+      icon.innerHTML = kind === "success"
+        ? '<i data-lucide="circle-check-big" style="width:24px;height:24px"></i>'
+        : '<i data-lucide="circle-alert" style="width:24px;height:24px"></i>';
+      titleElement.textContent = title;
+      textElement.textContent = text;
+
+      if (showAnswer) {
+        answerElement.textContent = `정답: ${state.sentences[state.currentIndex]}`;
+        answerElement.classList.remove("hidden");
+      } else {
+        answerElement.classList.add("hidden");
+      }
+
+      panel.classList.remove("hidden");
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function actionButton(label, iconName, handler, primary) {
+      const button = document.createElement("button");
+      button.type = "button";
+      button.className = `action-button inline-flex items-center gap-2 rounded-lg px-3 py-2 text-sm font-bold ${primary ? "bg-[#183b57] text-white" : "border border-current bg-white/60"}`;
+      button.innerHTML = `<i data-lucide="${iconName}" style="width:16px;height:16px"></i><span>${label}</span>`;
+      button.addEventListener("click", handler);
+      return button;
+    }
+
+    function checkAnswer() {
+      if (!state.answer.length) {
+        showFeedback("error", "먼저 단어를 배열해 주세요.", "섞인 단어를 클릭하거나 답안 영역으로 끌어다 놓아 문장을 만들어 보세요.", false);
+        return;
+      }
+
+      const isCorrect = normalizedAnswer(state.answer) === normalizedAnswer(currentTokens());
+      const actions = document.getElementById("feedback-actions");
+
+      if (isCorrect) {
+        state.correctCount++;
+        state.answer.forEach((token) => {
+          const tile = answerZone.querySelector(`[data-token-id="${token.id}"]`);
+          if (tile) tile.classList.add("correct-flash");
+        });
+        showFeedback("success", "정답이에요!", "문장의 어순을 정확하게 완성했어요.", true);
+        actions.appendChild(actionButton("다음 문장", "arrow-right", nextSentence, true));
+      } else {
+        /*
+         * 오답 표시 개선:
+         * 단순히 "현재 위치 === 정답 위치"를 비교하면 첫 단어 하나가
+         * 잘못된 순간 그 뒤의 정상 단어까지 전부 빨간색이 됩니다.
+         *
+         * 대신 각 단어가 정답에서 몇 번째인지 번호를 매기고,
+         * 현재 배열에서 정답 순서를 유지하는 가장 긴 부분수열(LIS)을 찾습니다.
+         * LIS에 포함된 단어는 순서가 올바르게 유지되고 있는 것으로 보고,
+         * LIS 밖의 '실제로 끼어든/순서를 깨뜨린 단어'만 빨간색으로 표시합니다.
+         */
+        const correctTokens = currentTokens();
+        const correctIndex = new Map(correctTokens.map((token, index) => [token.id, index]));
+        const sequence = state.answer
+          .map(token => correctIndex.get(token.id))
+          .filter(index => index !== undefined);
+
+        // LIS를 구하면서 마지막 인덱스도 추적합니다.
+        const dp = new Array(sequence.length).fill(1);
+        const prev = new Array(sequence.length).fill(-1);
+        let bestEnd = sequence.length ? 0 : -1;
+
+        for (let i = 0; i < sequence.length; i++) {
+          for (let j = 0; j < i; j++) {
+            if (sequence[j] < sequence[i] && dp[j] + 1 > dp[i]) {
+              dp[i] = dp[j] + 1;
+              prev[i] = j;
+            }
+          }
+          if (bestEnd === -1 || dp[i] > dp[bestEnd]) {
+            bestEnd = i;
+          }
+        }
+
+        const correctSequencePositions = new Set();
+        let cursor = bestEnd;
+        while (cursor !== -1) {
+          correctSequencePositions.add(cursor);
+          cursor = prev[cursor];
+        }
+
+        state.answer.forEach((token, index) => {
+          if (!correctSequencePositions.has(index)) {
+            const tile = answerZone.querySelector(`[data-token-id="${token.id}"]`);
+            if (tile) tile.classList.add("wrong-flash");
+          }
+        });
+
+        showFeedback(
+          "error",
+          "조금만 더 생각해 볼까요?",
+          "빨간색으로 표시된 단어가 현재 순서를 흐트러뜨리는 단어예요. 나머지 단어는 정답 순서를 유지하고 있어요.",
+          false
+        );
+        actions.appendChild(actionButton("다시 시도", "rotate-ccw", clearFeedback, false));
+        actions.appendChild(actionButton("정답 보기", "eye", revealAnswer, true));
+      }
+
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function revealAnswer() {
+      showFeedback("error", "정답을 확인해 보세요.", "내 답안과 정답을 비교한 뒤 다음 문장으로 넘어갈 수 있어요.", true);
+      const actions = document.getElementById("feedback-actions");
+      actions.replaceChildren(actionButton("다음 문장", "arrow-right", nextSentence, true));
+      if (window.lucide) lucide.createIcons();
+    }
+
+    function useHint() {
+      const correctTokens = currentTokens();
+      let mismatch = 0;
+
+      while (
+        mismatch < state.answer.length &&
+        mismatch < correctTokens.length &&
+        state.answer[mismatch].id === correctTokens[mismatch].id
+      ) mismatch++;
+
+      if (mismatch >= correctTokens.length) {
+        showFeedback("success", "이미 올바른 순서예요.", "이 문장은 답 확인 버튼을 눌러 완료할 수 있어요.", false);
+        return;
+      }
+
+      const needed = correctTokens[mismatch];
+      const bankIndex = state.bank.findIndex((token) => token.id === needed.id);
+
+      if (bankIndex >= 0) {
+        const [token] = state.bank.splice(bankIndex, 1);
+        state.answer.splice(mismatch, 0, token);
+      } else {
+        const existingIndex = state.answer.findIndex((token) => token.id === needed.id);
+        if (existingIndex >= 0) {
+          const [token] = state.answer.splice(existingIndex, 1);
+          state.answer.splice(mismatch, 0, token);
+        }
+      }
+
+      state.hintedSentenceIndexes.add(state.currentIndex);
+      updateProgress();
+      clearFeedback();
+      renderTiles();
+      showFeedback("success", "힌트를 적용했어요.", `"${needed.text}" 단어를 알맞은 위치에 놓았어요.`, false);
+    }
+
+    function startSentence() {
+      const tokens = currentTokens();
+      state.bank = shuffled(tokens);
+      state.answer = [];
+      clearFeedback();
+      updateProgress();
+      renderTiles();
+      showScreen("practice-screen");
+    }
+
+    function nextSentence() {
+      state.currentIndex++;
+      if (state.currentIndex >= state.sentences.length) {
+        completePractice();
+      } else {
+        startSentence();
+      }
+    }
+
+    function completePractice() {
+      const total = state.sentences.length;
+      const hints = state.hintedSentenceIndexes.size;
+      document.getElementById("result-total").textContent = `${total}문장`;
+      document.getElementById("result-correct").textContent = `${state.correctCount}문장`;
+      document.getElementById("result-hints").textContent = `${hints}회`;
+      document.getElementById("result-rate").textContent = `${Math.round((state.correctCount / total) * 100)}%`;
+      showScreen("complete-screen");
+    }
+
+    sourceForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+      clearInputError();
+
+      const raw = sourceText.value.trim();
+      if (!raw) {
+        showInputError("영어 본문을 입력해 주세요.");
+        sourceText.focus();
+        return;
+      }
+
+      const sentences = splitSentences(raw);
+      if (!sentences.length) {
+        showInputError("연습할 영어 문장을 찾지 못했어요. 영어 문장이 포함된 본문을 입력해 주세요.");
+        sourceText.focus();
+        return;
+      }
+
+      state.sourceText = raw;
+      state.sentences = sentences;
+      state.currentIndex = 0;
+      state.correctCount = 0;
+      state.hintedSentenceIndexes = new Set();
+      startSentence();
+    });
+
+    document.getElementById("hint-button").addEventListener("click", useHint);
+    document.getElementById("reset-button").addEventListener("click", resetCurrent);
+    document.getElementById("check-button").addEventListener("click", checkAnswer);
+
+    document.getElementById("restart-button").addEventListener("click", () => {
+      sourceText.value = state.sourceText;
+      clearInputError();
+      showScreen("input-screen");
+      sourceText.focus();
+    });
+
+    answerZone.addEventListener("dragover", (event) => {
+      event.preventDefault();
+      answerZone.classList.add("drag-over");
+      event.dataTransfer.dropEffect = "move";
+    });
+
+    answerZone.addEventListener("dragleave", (event) => {
+      if (!answerZone.contains(event.relatedTarget)) answerZone.classList.remove("drag-over");
+    });
+
+    answerZone.addEventListener("drop", (event) => {
+      event.preventDefault();
+      answerZone.classList.remove("drag-over");
+      const draggedId = event.dataTransfer.getData("text/plain") || state.dragTokenId;
+      if (!draggedId) return;
+
+      const bankIndex = state.bank.findIndex((token) => token.id === draggedId);
+      if (bankIndex >= 0) {
+        const [token] = state.bank.splice(bankIndex, 1);
+        state.answer.push(token);
+      }
+      clearFeedback();
+      renderTiles();
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      if (window.lucide) lucide.createIcons();
+    });
+  </script>
+ 
+</body></html>
